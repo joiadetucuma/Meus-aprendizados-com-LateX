@@ -1,0 +1,60 @@
+\documentclass[a4paper, 12pt]{article} % 
+\usepackage[utf8]{inputenc} % pacote para acentuação
+\usepackage[brazil]{babel} % para que vai escrever em português brasileiro
+\usepackage[lmargin=3cm,tmarging=3cm,rmargin=2cm,bmargin=2cm]{geometry} % formato que lembra ABNT
+\usepackage[T1]{fontenc} % ajusta o texto que vem de outras fontes
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont,mathtools,blindtext} %pacotes matemáticos
+\usepackage{blindtext} % palavras aleatórias
+\usepackage{graphicx} %adiciona figuras
+
+
+\begin{document}
+\title{Aulas de LateX}
+\maketitle %define o título
+
+\section{teste} % inicia seção  de artigo
+\subsection{teste um} % inicia uma subseção
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{teste de centralização}
+\begin{center}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\end{center} %inicia centralização no centro
+
+\subsection{teste em negrito}
+\textbf{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}
+
+\subsection{texte em itálico}
+\textit{
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.} % coloca em itálico
+
+\subsection{teste de underline}
+\underline{Lorem ipsum dolor sit amet} , consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. % coloca underline
+
+\subsection{teste de formatação para lateral}
+\begin{flushright}Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\end{flushright} % flushright alinha a direita e pode ser flushleft para a esquerda
+
+\subsection{teste de figuras}
+\begin{figure}[ht]%adiciona figura e ht serve para deixar a figura bem localizada
+
+\centering %coloca a figura do centro
+\includegraphics[width=7cm]{hello-kitty-png-tumblr-14.png} % includegraphics para colocar a imagem e width para determinar tamanho
+\caption{hello kitty} % coloca titulo na figura
+\label{Fig01} % marca a figura
+
+\end{figure}
+
+hello kitty \ref{Fig01} % chama a figura e a coloca como referência
+
+\subsection{teste de matrizes no \LaTeX}
+$ % serve para colocar os parênteses da matriz, tem que finalizar e iniciar com cifrão e identificar no começo e no fim esquerda e direita
+\left[\begin{array}{cc} % cc significa que a matriz está centralizada e que é 2x2
+   a  & b \\
+   c  & d
+\end{array}\right] % esse colchete pode ser () || \{}/ [] 
+$
+
+\end{document}
+ 
