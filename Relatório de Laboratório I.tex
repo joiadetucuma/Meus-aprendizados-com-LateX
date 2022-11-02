@@ -7,6 +7,8 @@
 \usepackage{amsmath, calc, xcolor}
 \usepackage{blindtext} 
 \usepackage{graphicx} 
+\usepackage[round]{natbib}
+\bibliographystyle{dinat}
 
 
 \title{Relatório de Laboratório I}
@@ -54,7 +56,7 @@ O objetivo desse experimento é aprender a manusear os materiais de medida do la
 O sistema de medidas decimais surgiu em meados do século XVI durante a Revolução Francesa a fim de unificar e acabar com as dificuldades de comércio e da indústria. Entre 1795 e 1982, ocorreram muitas mudanças nos conceitos e leis de medição, até que, em 1983, através da ciência, foram feitas a últimas alterações nas definições de medidas. Hoje em dia, as unidades de medidas estão em todo lugar e regulam os padrões de comércio e indústria, cumprindo a necessidade que houve durante a Revolução Francesa e ajudando as necessidades do mundo atual.
 
 \section{Os Procedimentos}
-Primeiramente, com a régua e o auxílio que um pequeno suporte acoplado a ela, encaixamos e esfera de aço e concluímos que o seu diâmetro é de 26,50±0,5 mm. O mesmo procedimento foi feito com um paquímetro (usado para medir dimensões lineares internas e externas e profundidade de uma peça, geralmente de tamanho pequeno) e o micrômetro (usado para medir altura, espessura, largura e profundidade de um objeto em milímetros ou polegadas) e concluímos que suas medidas são 27,10±0,05 mm e 26,918±0,004 mm respectivamente. A diferença de medida dos três objetos se deu por conta de serem objetos diferentes com meios de medir distintos.
+Primeiramente, com a régua e o auxílio que um pequeno suporte acoplado a ela, encaixamos e esfera de aço e concluímos que o seu diâmetro é de 26,50±0,5 mm. O mesmo procedimento foi feito com um paquímetro (usado para medir dimensões lineares internas e externas e profundidade de uma peça, geralmente de tamanho pequeno) e o micrômetro (usado para medir altura, espessura, largura e profundidade de um objeto em milímetros ou polegadas) e concluímos que suas medidas são 27,10±0,05 mm e 26,918±0,004 mm respectivamente. A diferença de medida dos três objetos se deu por conta de serem objetos diferentes com meios de medir distintos. 
 
 \section{Os Resultados}
 Para encontrar o raio, a fim de aplicar na fórmula do volume da esfera e concluir o experimento, é necessário dividir o diâmetro de cada um dos resultados por dois. Logo, os resultados obtidos e aplicados na fórmula:
@@ -63,21 +65,50 @@ Para encontrar o raio, a fim de aplicar na fórmula do volume da esfera e conclu
     V = \frac{4}{3}\pi r^{3}
 \end{equation}
 
+Tendo em vista que, das fórmulas de propagação de incertezas, a que mais se assemelha a fórmula do volume é:
+
+\begin{equation}
+    w = ax ^{p}. y^{q}
+    
+\end{equation}
+
+Onde:
+
+w = Volume \vspace{1}
+
+a = \frac{4}{3} \vspace{1}
+
+x = pi \vspace{1}  
+   
+p = expoente de pi \vspace{1}   
+
+y = raio \vspace{1}
+
+q = expoente do raio \vspace{3}
+
+\vspace{2}
+Após isso, é necessário calcular a propagação de incerteza do volume, através da fórmula:
+
+\begin{equation}
+     \left( \frac{\delta w}{w} ^{2} \right) = \left (p \frac{\delta x}{x} ^{2} \right) + \left( q \frac{\delta y}{y} ^ {2} \right)
+\end{equation}  
+
 Logo, a interpretação dos resultados fica: 
 \begin{table}[h]
 \centering
 \begin{tabular}{|l|l|l|l|}
 \hline
 Instrumento & (D± \Delta D) & (r± \Delta r ) & (V±\Delta V)   \\ \hline
-Régua       & 26,50±0,5  & 13,25±0,5   & 9743,97±0,5  \\ \hline
-Paquímetro  & 27,10±0,05  & 13,55±0,05  & 10420,93±0,05 \\ \hline
-Micrômetro  & 26,918±0,004 & 13,459±0,004 & 10191,9±0,004  \\ \hline
+Régua       & 26,50±0,5  & 13,25±0,5   & 9743,97±3488 mm ^ {3}   \\ \hline
+Paquímetro  & 27,10±0,05  & 13,55±0,05  & 10420,93±115 mm ^ {3} \\ \hline
+Micrômetro  & 26,918±0,004 & 13,46±0,004 & 10191,9±527 mm ^ {3}  \\ \hline
 
 \end{tabular}
 \end{table}
 
 \section{Conclusão}
-Por fim, o experimento foi concluído com sucesso e todos os resultados foram obtidos com êxito. Retomando, o objetivo do experimento era: calcular a partir de objetos distintos o diâmetro e o raio de uma esfera de aço e aplicar na fómula de volume da esfera, trazendo e volta e revisando os conceitos do ensino médio.
+Por fim, o experimento foi concluído com sucesso e todos os resultados foram obtidos com êxito. Retomando, o objetivo do experimento era: calcular a partir de objetos distintos o diâmetro e o raio de uma esfera de aço e aplicar na fómula de volume da esfera e aprender sobre a propagação de incertezas
 
 
 \end{document}
+
