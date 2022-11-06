@@ -1,0 +1,138 @@
+\documentclass[a4paper, 12pt]{article} 
+\usepackage[utf8]{inputenc} 
+\usepackage[brazil]{babel} 
+\usepackage[lmargin=3cm,tmarging=3cm,rmargin=2cm,bmargin=2cm]{geometry} 
+\usepackage[T1]{fontenc} 
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont,mathtools,blindtext} 
+\usepackage{amsmath, calc, xcolor}
+\usepackage{blindtext} 
+\usepackage{graphicx} 
+\usepackage[round]{natbib}
+\bibliographystyle{dinat}
+
+
+\title{Relatório de Laboratório II}
+\author{Maria Clara Rodrigues Miranda}
+\date{03 de Novembro 2022}
+
+\begin{document}
+\maketitle
+
+\section{Assunto}
+O experimento \textbf{Análise Gráfica de Dados}, foi executado através de materiais específicos para medir o comportamento da mola quando sofre influencia de um peso. O procedimento, as medidas e os resultados desse experimento foram obtidos pela aluna \textit{Maria Clara Rodrigues Miranda da turma de Física - Bacharelado, FB01.}
+
+\section{O Experimento}
+Para o esse procedimento foram utilizados: uma mola de 9mm de diâmetro, um porta-peso de 10 g, cinco pesos de 50g, um suporte e uma régua milimetrada. A partir disso, iremos estudar a influência dos pesos acoplados a extremidade da mola e elabora um gráfico desses valores.
+
+\section{O Objetivo}
+O objetivo desse experimento é calcular a constante elástica, comparar com a literatura, de uma mola através da análise dos resultados obtidos através da interpretação gráfica feita a partir desses mesmos resultados.
+
+\section{A Teoria}
+Neste experimento usamos o princípio da Lei de Hooke. Formulada pelo cientista Robert Hooke na década de XV, essa lei afirma que quando uma força externa é aplicada na mola, ela é capaz de deformar a mola fazendo-a produzir uma força contrária a força externa, o que chamamos de força elástica e essa força é diretamente proporciona a deformação da mola. Onde Fel = força elástica em Newtons, k = constante elástica e x = deformação da mola. Essa fórmula é:
+\begin{equation}
+    Fel = -k \times x
+\end{equation}
+
+\begin{figure}[!ht]
+\centering 
+\includegraphics[width=7cm]{pictures/lei de hooke.png} 
+\caption{Lei de Hooke} 
+\label{Fig01} 
+\end{figure}
+
+\pagebreak
+\section{Os Procedimentos}
+Primeiro, encaixamos a mola no suporte e com o auxílio da régua marcamos o nosso ponto referencial, que é o nosso "marco zero", caracterizando o começo do experimento. Em seguida, encaixamos o porta-peso de 10g mais um peso de 50g (totalizando 60g) e marcamos com a régua qual foi a medida em milímetros desse desse em relação a medida anterior. Realizamos essa segunda parte do procedimento cinco vezes, adicionando a cada 50g, mais 50g.
+
+\section{Os Resultados}
+\subsection{Passo 1}
+Sobre a adição de pesos em cada etapa, foram obtidas seis medidas, incluindo o ponto referencial. A variação da primeira medida (ponto referencial) para a segunda foi de 30mm, da segunda para a terceira = 24mm, da terceira para a quarta = 24mm, da quarta para a quinta = 25mm e da quinta para a sexta = 25mm. A massa dos resultados foram convertidas de grama para quilograma e de milímetro para metro. São elas:
+
+\begin{table}[!ht]  
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+
+    m \pm \Delta m & y ± \Delta y \\ \hline 
+        0 & 7,0 x 10 ^ {-1} \pm 1 \\ \hline
+        6,0 x 10 ^ {-2} \pm 1 & 6,7 x 10 ^ {-1} \pm 1 \\ \hline
+        1,1 x 10 ^ {-1} \pm 1 & 6,46 x 10 ^ {-1} \pm 1 \\ \hline
+        1,6 x 10 ^ {-1} \pm 1 & 6,22 x 10 ^ {-1} \pm 1 \\ \hline
+        2,1 x 10 ^ {-1} \pm 1 & 5,97 x 10 ^ {-1} \pm 1 \\ \hline
+        2,6 x 10 ^ {-1} \pm 1 & 5,92 x 10 ^ {-1} \pm 1 \\ \hline
+ 
+    \end{tabular}
+    \caption{\label{tab:table-name}Tabela de Resultados.}
+\end{table}
+
+\subsection{Passo 2}
+Em seguida, aplicamos esse valor na fórmula da força peso:
+\begin{equation}
+    P = m \times g
+\end{equation}
+
+Onde:
+
+m = massa em quilograma \vspace{1} 
+
+g = gravidade = 9,8 metros por segundo ao quadrado \vspace{1}
+
+E obtivemos os seguintes valores: \vspace{1}
+
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+        $m \pm \Delta m$ & força peso \\ \hline
+        $0$ & $0$ \\ \hline
+        $6,0 x 10 ^ {-2} \pm 1$ & $5,88 x 10 ^ {-1}$  \\ \hline
+        $1,1 x 10 ^ {-1} \pm 1$ & $1,078$ \\ \hline
+        $1,6 x 10 ^ {-1} \pm 1$ & $1,568$ \\ \hline
+        $2,1 x 10 ^ {-1} \pm 1$ & $2,058$ \\ \hline
+        $2,6 x 10 ^ {-1} \pm 1$ & $2,548$ \\ \hline 
+    \end{tabular}
+\end{table}
+
+\subsection{Passo 3}
+Por fim, aplicamos esse resultado na fórmula da Lei de Hooke, substituindo Fel por P, e x por $\Delta$Y e obtivemos os seguintes valores:
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|c|}
+\hline
+    $P = -k \times \Delta y$ \\ \hline
+    $0  $                    \\ \hline
+    $8,95 \times 10 ^ {-4}$  \\ \hline
+    $1,70 \times 10 ^ {-3}$  \\ \hline 
+    $2,57 \times 10 ^ {-3}$  \\ \hline
+    $3,51 \times 10 ^ {-3}$  \\ \hline
+    $4,54 \times 10 ^ {-3}$  \\ \hline
+  \end{tabular}
+\end{table}
+
+Somando todos esses valores e comparando com a constante normal que nos foi fornecida durante o experimento de $20 N/m ^ {2}$, obtivemos o valor de $21 N/m ^ {2}$ (o que se encontra dentro da méia tendo em vista que a propagação de incerteza é de $\pm$1. Lembrando que a constante elástica é o que caracteriza a deformação da mola e condiz com a força necessária para que a mola sofra deformidade. As molas que apresentam grandes constantes são mais difíceis de serem deformadas, diferente das menores. 
+
+
+\section{Conclusão}
+Concluindo, então, que a reta formada pelo gráfico é crescente e que os valores são diretamente proporcionais uns aos outros e atingindo a meta do experimento: utilizar fórmulas para encontrar valores que sejam aplicáveis a Lei de Hooke e, principalmente, construir um gráfico e analisá-lo baseado nos resultanos obtidos.
+Logo, finalizando o experimento, identificando os valores e aplicando corretamente todas as fórmulas, temos os dados para construir o gráfico de Hooke. Quando o eixo Y equivale ao P(Fel) e o eixo X equivale a Massa (m) o gráfico fica da seguinte maneira:
+
+\begin{figure}[!ht]
+\centering 
+\includegraphics[width=12cm]{pictures/gráfico de hooke.jpg} 
+\caption{Gráfico} 
+\label{Fig02} 
+\end{figure}
+
+
+\pagebreak
+\section{Referências}
+NUSSENZVEIG, Herch Moysés. \textbf{Curso de física básica: Mecânica (vol. 1)}. Editora Blucher, 2013. \vspace{1}
+
+MARQUES DA SILVA, Domiciano Correa. \textbf{“Representação Gráfica Da Lei de Hooke. O Gráfico Da Lei de Hooke.”} PrePara Enem, www.preparaenem.com/fisica/ \vspace{1}
+
+HELERBROCK, Rafael. “Lei de Hooke: Conceito, Fórmula, Gráfico, Exercícios.” Brasil Escola, brasilescola.uol.com.br/fisica/lei-de-hooke.htm.
+‌
+
+\end{document}
