@@ -1,0 +1,95 @@
+\documentclass[a4paper, 12pt]{article} 
+\usepackage[utf8]{inputenc} 
+\usepackage[brazil]{babel} 
+\usepackage[lmargin=3cm,tmarging=3cm,rmargin=2cm,bmargin=2cm]{geometry} 
+\usepackage[T1]{fontenc} 
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont,mathtools,blindtext} 
+\usepackage{amsmath, calc, xcolor}
+\usepackage{blindtext} 
+\usepackage{graphicx} 
+\usepackage[round]{natbib}
+\bibliographystyle{dinat}
+
+
+\title{Relatório de Laboratório III}
+\author{Maria Clara Rodrigues Miranda}
+\date{14 de Novembro de 2022}
+
+\begin{document}
+\maketitle
+
+\section{Assunto}
+O experimento \textbf{Queda Livre}, foi executado através de materiais específicos para medir a altura e o tempo de queda livre, nesse caso, foi utilizados um total de dez objetos para a execução do experimento. O procedimento, as medidas e os resultados desse experimento foram obtidos pela aluna \textit{Maria Clara Rodrigues Miranda da turma de Física - Bacharelado, FB01.}
+
+\section{O Experimento}
+Para o esse procedimento foram utilizados: uma esfera de diâmetro de aproximadamente 19mm, um cronômetro digital, um suporte de base, dois grampos duplos, um haste de suporte, uma régua milimetrada, um fixador de esfera, dois cordões de conexão de 750mm, dois cordões de 1500mm e um prato interruptor.
+
+\section{O Objetivo}
+O objetivo desse experimento é calcular o tempo de queda livre de uma esfera em relação a altura descrita no Manual de Laboratório e em seguida, calcular a aceleração da gravidade e executar um gráfico com a relação altura X tempo.
+
+\begin{figure}[ht]
+\centering 
+\includegraphics[width=7cm]{grafico-do-exemplo-velocidade.jpg.jpg} 
+\caption{Exemplo de gráfico de aceleração} 
+\label{Fig01} 
+\end{figure}
+
+\section{A Teoria}
+Quando um corpo que tem uma massa sofre o processo de aceleração por um meio externo quando está em repouso, esse corpo tende a ter um movimento retilíneo uniformemente variado. A força que atrai esse corpo para o centro da Terra é a gravidade, que tem uma aceleração de aproximadamente $9,8m/s^{2}$ e a relação da altura da queda com o tempo é dada pela equação:
+
+\begin{equation}
+    y(t) = \frac{1}{2}gt^{2}
+\end{equation}
+
+E a equação da aceleração, onde $\Delta V$ é a variação da velocidade e $\Delta t$ é a variação do tempo, é:
+
+\begin{equation}
+    a = \frac{\Delta V}{\Delta t}
+\end{equation}
+
+\section{Os Procedimentos}
+Primeiramente, começamos ligando devidamente o cronômetro digital, em seguida, acoplamos a esfera ao fixador e com a régua, a colocamos das seguintes alturas: 150mm, 200mm, 250mm, 300mm, 350mm e 400mm. Em seguida, colocamos a esfera na altura, zeramos o cronômetro e soltamos a esfera do fixador. Para cada medida, repetimos esse processo de 3 a 4 vezes e tiramos uma média de cada um e registramos. Em seguida, com o suporte do Excel, executamos o nosso gráfico e comparamos com a literatura se o valor da equação gerada pelo gráfico se aproxima da aceleração da gravidade.
+
+\section{Os Resultados}
+Durante a primeira parte do procedimento, obtivemos as médias do tempo de queda livre, em segundos, referente a cada altura, em milímetros, são esses:
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+        \textbf{Altura (h)} & \textbf{Tempo (t)} \\ \hline
+        $150mm \pm 5$ & 0,1827 \\ \hline
+        $200mm \pm 5$ & 0,2085 \\ \hline
+        $250mm \pm 5$ & 0,2317 \\ \hline
+        $300mm \pm 5$ & 0,2535 \\ \hline
+        $350mm \pm 5$ & 0,2729 \\ \hline
+        $400mm \pm 5$ & 0,2902 \\ \hline
+    \end{tabular}
+\end{table}
+
+Após a análise desses dados, foi feito um gráfico exponencial onde o eixo X significa o tempo e o eixo Y significa altura com a equação do gráfico:
+
+\begin{figure}[ht]
+\centering 
+\includegraphics[width=12cm]{graficoquedalivre.png} 
+\caption{Gráfico dos Dados} 
+\label{Fig02} 
+\end{figure}
+\pagebreak
+
+Em seguida, com a fórmula da equação, nós a comparamos com a equação da queda livre e obtemos os seguintes resultados:
+
+\begin{equation}
+     y= 5,4293x^{2, 1085} 
+\end{equation}
+E:
+\begin{equation}
+     h = gt^{2}
+\end{equation}
+
+E obtemos um valor aproximado da gravidade de $g = 10,84m/s^{2}$ que comparado com a literatura, temos uma diferença de $g = 1,04m/s^{2}$.
+
+\section{Conclusão}
+Por fim, concluímos o objetivo e compreendemos as propriedades da queda livre, a aceleração junto com a comparação de dados com a literatura, além de executar todos os procedimentos de maneira correta e supervisionada.
+
+\end{document}
